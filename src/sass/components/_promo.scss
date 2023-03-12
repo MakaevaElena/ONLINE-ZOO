@@ -1,9 +1,9 @@
 .promo {
-  background-image: url('../img/promo/Giant_panda.jpg');
+  background-image: url('./img/promo/Giant_panda.jpg');
   background-position: 0% 104%;
   @include media-small-desktop {
     background-position: 0% 100%;
-    background-image: url('../img/promo/Giant-Panda-smalldesktop.jpg');
+    background-image: url('./img/promo/Giant-Panda-smalldesktop.jpg');
   }
   background-repeat: no-repeat;
   background-size: cover;

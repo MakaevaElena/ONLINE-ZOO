@@ -1,10 +1,10 @@
 .testimonials {
-  background-image: url('/src/img/testimonials/leav_foto.png');
+  background-image: url('./src/img/testimonials/leav_foto.png');
   background-repeat: no-repeat;
   background-position: 113.5% 126%;
 
   @include media-small-desktop {
-    background-image: url('/src/img/testimonials/leav_foto-smalldesktop.png');
+    background-image: url('./src/img/testimonials/leav_foto-smalldesktop.png');
     background-position: 100% 117%;
   }
 

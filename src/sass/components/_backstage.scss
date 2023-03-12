@@ -1,5 +1,5 @@
 .backstage {
-  background-image: url('/src/img/backstage/flower_foto1.png');
+  background-image: url('./src/img/backstage/flower_foto1.png');
   background-position: 107.5% 9%;
   background-repeat: no-repeat;
   // background-size: ;
@@ -21,11 +21,11 @@
 
   &__photo {
     width: 609px;
-    background-image: url('/src/img/backstage/bamboo-cap.jpg');
+    background-image: url('./src/img/backstage/bamboo-cap.jpg');
     @include media-small-desktop {
       width: 455px;
       height: 408px;
-      background-image: url('/src/img/backstage/bamboo-cap-smalldesktop.jpg');
+      background-image: url('./src/img/backstage/bamboo-cap-smalldesktop.jpg');
     }
   }
 
