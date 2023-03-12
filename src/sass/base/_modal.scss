@@ -1,0 +1,43 @@
+.overlay {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: $color-overlay;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+
+  // min-height: 100px;
+  // max-height: 90%;
+  overflow: auto;
+  // transform: translate(-50%, -50%);
+  @extend %custom-scroll;
+
+  @include media-tablet {
+    width: 90%;
+  }
+  &__testimonial {
+    cursor: default;
+  }
+}
+
+.modal__close-icon {
+  position: absolute;
+  // background-image: url('../../img/testimonials/x_icon.png');
+  top: 0px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}

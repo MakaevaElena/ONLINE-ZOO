@@ -1,0 +1,29 @@
+.header {
+  background-color: $background1;
+
+  // &__wrapper {
+  //   padding-left: 14px;
+  // }
+  @include media-tablet {
+    .navigation__link {
+      display: none;
+    }
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__logo img {
+    padding: 15px 5px 10px 0;
+    @include media-tablet {
+      height: 29.3px;
+      width: 46.93px;
+      padding: 0;
+    }
+  }
+}
+
+// .header .header__copyright {
+//   padding-left: 400px;
+// }

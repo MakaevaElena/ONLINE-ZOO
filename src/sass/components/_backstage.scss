@@ -1,0 +1,58 @@
+.backstage {
+  background-image: url('/src/img/backstage/flower_foto1.png');
+  background-position: 107.5% 9%;
+  background-repeat: no-repeat;
+  // background-size: ;
+  padding: 137px 0 180px 0;
+
+  @include media-small-desktop {
+    padding: 100px 0 140px 0;
+    background-image: none;
+  }
+  &__content {
+    max-width: 46.5rem;
+    display: flex;
+    flex-direction: column;
+
+    @include media-small-desktop {
+      max-width: 45.4rem;
+    }
+  }
+
+  &__photo {
+    width: 609px;
+    background-image: url('/src/img/backstage/bamboo-cap.jpg');
+    @include media-small-desktop {
+      width: 455px;
+      height: 408px;
+      background-image: url('/src/img/backstage/bamboo-cap-smalldesktop.jpg');
+    }
+  }
+
+  &__paragraf {
+    padding: 22px 0 54px 0;
+  }
+  &__h4 {
+    padding: 0px 0 32px 0;
+  }
+}
+
+.backstage__wrapper {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  max-height: 40.3rem;
+  @include media-small-desktop {
+    max-height: 42.7rem;
+    align-items: center;
+  }
+}
+
+@include media-tablet {
+  .backstage {
+    background-position: 150% 5%;
+  }
+  .backstage__photo {
+    display: none;
+  }
+}

@@ -1,0 +1,137 @@
+.footer {
+  background-color: black;
+  color: $text1;
+  padding-bottom: 50px;
+
+  &__columns {
+    @include media-small-desktop {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__left {
+    // width: 33%;
+    // flex-grow: 1;
+    flex-basis: 33%;
+    padding: 40px 0 0 0;
+    @include media-small-desktop {
+      padding: 45px 0 0 0;
+    }
+
+    .button {
+      margin-top: 57px;
+      @include media-small-desktop {
+        margin-top: 62px;
+      }
+    }
+    .contacts {
+      padding: 36px 0 0px 0;
+
+      .contact {
+        padding-top: 9px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &__icon {
+          height: 26px;
+          width: 26px;
+          background-color: $background_icons;
+          border-radius: 50%;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+        }
+
+        .facebook {
+          background-image: url('/src/img/footer/facebook.png');
+        }
+
+        .twitter {
+          background-image: url('/src/img/footer/twitter.png');
+        }
+
+        .instagram {
+          background-image: url('/src/img/footer/instagram.png');
+        }
+
+        .youtube {
+          background-image: url('/src/img/footer/youtube.png');
+        }
+
+        &__link {
+          padding-left: 12px;
+
+          a {
+            color: $text1;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__center {
+    // width: 33%;
+    flex-basis: 33%;
+    // flex-grow: 1;
+    align-self: flex-end;
+
+    @include media-small-desktop {
+      margin: 0 0px 0 -30px;
+      flex-grow: 1;
+      // margin-top: 5px;
+    }
+
+    .navigation {
+      margin: 0px 10px 0px 10px;
+
+      @include media-small-desktop {
+        justify-content: start;
+        &__link:not(:first-child) > a {
+          margin-left: 48px;
+        }
+      }
+
+      // li:first-of-type a {
+      //   margin-left: 0px;
+      // }
+    }
+  }
+
+  &__right {
+    flex-basis: 33%;
+    padding: 40px 0 0px 16px;
+
+    @include media-small-desktop {
+      padding: 47px 0 0px 5px;
+      margin: 0 0px 0 -150px;
+      flex-grow: 1;
+    }
+
+    .form {
+      padding: 12px 0 216px 0;
+
+      .input__email {
+        padding: 10px 10px;
+        height: 42px;
+        width: 228px;
+      }
+
+      .button {
+        margin-left: 5px;
+      }
+    }
+
+    .footer-copyright {
+      padding-left: 137px;
+      @include font(normal, 100, 1.6rem, 20.8px);
+
+      @include media-small-desktop {
+        padding-left: 170px;
+      }
+      p {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

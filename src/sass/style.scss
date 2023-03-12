@@ -1,0 +1,27 @@
+// @include normalize();
+// вместо
+// @import '../node_modules/normalize-scss/sass/normalize';
+@import 'abstract/constants';
+@import 'abstract/placeholders';
+@import 'abstract/mixins';
+@import 'base/base';
+@import 'layouts/wrapper';
+@import 'layouts/columns';
+
+//не видно
+/*видно*/
+@import 'components/promo';
+@import 'components/pick-and-feed';
+@import 'components/backstage';
+@import 'components/navigation';
+@import 'components/animals';
+@import 'components/testimonials';
+
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'base/buttons';
+@import 'base/logo';
+@import 'base/normalize';
+@import 'base/icons';
+@import 'base/hamburger';
+@import 'base/modal';

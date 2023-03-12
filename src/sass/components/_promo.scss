@@ -1,0 +1,75 @@
+.promo {
+  background-image: url('../img/promo/Giant_panda.jpg');
+  background-position: 0% 104%;
+  @include media-small-desktop {
+    background-position: 0% 100%;
+    background-image: url('../img/promo/Giant-Panda-smalldesktop.jpg');
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 13px 0 100px 0;
+  @include media-small-desktop {
+    padding: 0px 0 47px 0;
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 60rem;
+  // @include media-small-desktop {
+  //   max-height: 50.4rem;
+  // }
+  overflow: hidden;
+}
+
+.promo__content {
+  position: relative;
+}
+
+.promo__content h1 {
+  // @include font(normal, 700, 10.7rem, 75%);
+  position: relative;
+  text-align: center;
+  color: $text1;
+  z-index: 2;
+  margin-bottom: 6rem;
+  margin-right: 0.8rem; //?
+  @include media-small-desktop {
+    margin-bottom: 4rem;
+    margin-right: 6.5rem;
+    margin-top: 42px;
+  }
+
+  .h1__colored {
+    color: $yellow;
+  }
+}
+
+.circle {
+  position: absolute;
+  top: 0px;
+  left: -80px;
+  z-index: 1;
+  @include media-small-desktop {
+    top: -15px;
+    left: -65px;
+  }
+  img {
+    @include media-small-desktop {
+      max-width: 367px;
+    }
+    @include media-tablet {
+      max-width: 237.6px;
+    }
+  }
+}
+
+.promo-button {
+  text-align: center;
+  @include media-small-desktop {
+    margin-right: 60px;
+  }
+}

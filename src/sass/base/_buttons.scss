@@ -1,0 +1,116 @@
+.button {
+  font-family: 'Roboto', Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  //   line-height: 140%;
+  line-height: 2.2rem;
+  padding: 1.6rem 0rem;
+  width: 298px;
+
+  background-color: $button;
+  color: $text1;
+  border: 0.1rem solid $button;
+  border-radius: 5px;
+  cursor: pointer;
+  // transition: all 0.3s;
+  @extend %transition;
+
+  &__round {
+    border-radius: 2.5rem;
+  }
+
+  &:hover {
+    background-color: $button_hover;
+    border: 0.1rem solid $button_hover;
+  }
+
+  &:active {
+    background-color: $active_button;
+    border: 0.1rem solid $active_button;
+  }
+
+  &__submit {
+    background-color: $testimonials_background;
+    border: 0.1rem solid $text_submit;
+    color: $text_submit;
+    max-width: 129px;
+    padding: 0.9rem 0rem;
+    // @extend %transition;
+
+    &:hover {
+      background-color: $testimonials_background;
+      border: 0.1rem solid $active_button;
+      color: $active_button;
+    }
+
+    &:active {
+      background-color: $testimonials_background;
+      border: 0.1rem solid $active_button;
+      color: $active_button;
+    }
+
+    &:invalid {
+      background-color: $testimonials_background;
+      border: 0.1rem solid $red;
+      color: $red;
+    }
+  }
+}
+
+input {
+  background-color: $background1;
+  border: 0.1rem solid $button;
+  padding: 0.8rem 0rem;
+  cursor: pointer;
+  @extend %transition;
+
+  &:hover {
+    // background-color: $testimonials_background;
+    border: 0.1rem solid $active_button;
+    color: $active_button;
+  }
+
+  &:active {
+    // background-color: $testimonials_background;
+    border: 0.1rem solid $active_button;
+    color: $active_button;
+  }
+
+  &:invalid {
+    background-color: $testimonials_background;
+    border: 0.1rem solid $red;
+    color: $red;
+  }
+}
+
+.arrow {
+  margin-bottom: 25px;
+  background-color: $button;
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &__right {
+    background-image: url('/src/img/animals-cards/right.png');
+    margin-right: 140px;
+  }
+
+  &__left {
+    background-image: url('/src/img/animals-cards/left.png');
+    margin-left: 140px;
+  }
+
+  &:hover {
+    background-color: $button_hover;
+    border: 0.1rem solid $button_hover;
+  }
+
+  &:active {
+    background-color: $active_button;
+    border: 0.1rem solid $active_button;
+  }
+}

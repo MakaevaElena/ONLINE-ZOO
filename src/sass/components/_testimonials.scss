@@ -1,0 +1,87 @@
+.testimonials {
+  background-image: url('/src/img/testimonials/leav_foto.png');
+  background-repeat: no-repeat;
+  background-position: 113.5% 126%;
+
+  @include media-small-desktop {
+    background-image: url('/src/img/testimonials/leav_foto-smalldesktop.png');
+    background-position: 100% 117%;
+  }
+
+  &__line-scroll {
+    margin: 20px 280px 12px 270px;
+    height: 7px;
+    background-color: $button;
+    border-radius: 10px;
+  }
+  &__button {
+    padding: 40px 0 180px 0;
+    @include media-small-desktop {
+      padding: 40px 0 137px 0;
+    }
+  }
+  h3 {
+    padding: 140px 0 47px 0;
+    text-align: center;
+
+    @include media-small-desktop {
+      padding: 100px 0 32px 0;
+    }
+  }
+  .layout-4-column {
+    display: flex;
+
+    justify-content: space-between;
+  }
+}
+.user-info {
+  display: flex;
+  padding: 13px 15px 0px 16px;
+
+  &__right {
+    padding: 0px 10px 0px 10px;
+
+    span {
+      @include font(normal, 300, 1.5rem, 18px);
+      color: $testimonials_info;
+      vertical-align: top;
+    }
+  }
+}
+
+.testimonial {
+  // width: 23%;
+  flex-basis: 23%;
+  height: 391px;
+  border: 1px solid $button;
+  border-radius: 20px;
+  //   word-wrap: break-word;
+  // padding-bottom: 50px;
+  background-color: $testimonials_background;
+  cursor: pointer;
+
+  @include media-small-desktop {
+    flex-basis: 31%;
+  }
+
+  &__last {
+    @include media-small-desktop {
+      display: none;
+    }
+  }
+
+  .small-paragraf {
+    overflow: hidden;
+    // word-wrap: break-word;
+    height: 80%;
+    padding: 5px 15px 0px 16px;
+    @include font(normal, 300, 1.5rem, 18px);
+
+    @include media-small-desktop {
+      // height: 70%;
+      // padding: 5px 15px 0px 16px;
+    }
+  }
+}
+
+// .testimonials-modal {}

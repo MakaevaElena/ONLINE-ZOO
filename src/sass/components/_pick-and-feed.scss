@@ -1,0 +1,106 @@
+.pick-and-feed {
+  background: $feed_background;
+  padding: 69px 0 100px 0;
+
+  @include media-small-desktop {
+    padding: 34.5px 0 50px 0;
+  }
+
+  &__square {
+    border-radius: 20px;
+    background-color: $feed_square_background;
+    backdrop-filter: blur(2px);
+  }
+  &__button {
+    text-align: center;
+    padding-bottom: 60px;
+    @include media-small-desktop {
+      padding-bottom: 50px;
+    }
+  }
+
+  h2 {
+    padding: 41px 0 30px 0;
+    text-align: center;
+    color: $text_feed;
+    @include media-small-desktop {
+      padding: 25px 0 0px 0;
+    }
+  }
+
+  h4 {
+    padding: 0px 0px 38px 99px;
+    @include media-small-desktop {
+      padding: 22px 0px 0px 50px;
+    }
+  }
+
+  h5 {
+    padding: 0px 0px 8px 100px;
+    @include media-small-desktop {
+      padding: 20px 0px 0px 50px;
+      max-width: 850px;
+    }
+  }
+
+  &__text {
+    padding: 0px 0px 60px 100px;
+    max-width: 960px;
+    @include media-small-desktop {
+      padding: 6px 0px 40px 50px;
+      max-width: 850px;
+    }
+  }
+
+  &__emergancy {
+    padding-bottom: 2px;
+    border-bottom: 1px $link_hover solid;
+  }
+
+  h3 {
+    padding-left: 475px;
+    @include media-small-desktop {
+      padding-left: 365px;
+    }
+  }
+}
+
+.how-images {
+  display: flex;
+  justify-content: center;
+  padding: 37px 0px 62px 400px;
+  max-width: 764px;
+
+  @include media-small-desktop {
+    padding: 40px 0px 70px 175px;
+  }
+
+  @include media-tablet {
+    padding: 37px 0px 62px 0px;
+  }
+
+  &__row {
+    // margin-left: 30px;
+    padding: 54px 30px;
+    @include media-tablet {
+      display: none;
+    }
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $background_cards;
+    width: 168px;
+    height: 168px;
+    // padding: 0px 30px;
+    border: 1px solid $button;
+  }
+
+  .payment-text {
+    @include font(normal, 400, 1.6rem, 22px);
+    padding-top: 30px;
+  }
+}
